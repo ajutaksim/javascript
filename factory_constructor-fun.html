@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factory function</title>
+</head>
+
+<body>
+    <script>
+
+        // constructor
+        function Student(firstname, lastname, rollno, cls, marks) {
+
+            this.firstname = firstname;
+            this.lastname = lastname;
+            this.rollno = rollno;
+            this.class = cls;
+            this.marks = marks;
+        }
+
+        const Student1 = new Student("gadhvara", "taksim", 1, 10, 80);
+        const Student2 = new Student("badi", "anis", 2, 10, 70);
+        const Student3 = new Student("badi", "sadik", 3, 10, 60);
+        const Student4 = new Student("badi", "urves", 4, 10, 50);
+
+        Student1.result = "pass";
+
+
+               
+        console.log(Student1);
+        console.log(Student2);
+        console.log(Student3);
+        console.log(Student4);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
