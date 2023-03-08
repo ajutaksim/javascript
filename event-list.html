@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="p"></p>
+        <button onclick="myfunction()" >click me</button>
+    </div>
+
+    <div>
+        <p id="p"></p>
+        <button id="btn" >click me</button>
+    </div>
+    <script>
+       function myfunction(){
+        document.getElementById("p").innerHTML="hyy this is apple"
+       }
+
+
+            // addEventListener
+
+    let a=function(){
+        alert("hello word in taksim")
+    }
+
+    let b=function(){
+        alert("hello word in tajim")
+    }
+
+    btn.addEventListener('click',a)
+    btn.addEventListener('click',b)
+
+    let c=prompt("enter a function")
+
+    if(c=="taksim"){
+        btn.removeEventListener('click',a)
+    }
+    </script>
+</body>
+</html>
