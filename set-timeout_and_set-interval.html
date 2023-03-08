@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" onsubmit="return validetion()" style="text-align: center; background-color: blueviolet; width: 20%;margin: 100px auto;padding: 30px 0;">
+
+            <input type="email" name="email" id="email" placeholder="email" style="margin-top: 20px;font-size: 20px;"></p>
+            <input type="password" name="password" id="password" placeholder="password" style="margin-top: 20px;font-size: 20px;"></p>
+            <input type="submit" value="submit" style="font-size: 20px;">
+    </form>
+    <script>
+        // let a=setTimeout(function(){
+        //     alert("hyy i am taksim")
+        // },2000)
+        // clearTimeout(a)
+        // console.log(a);
+
+
+
+    //     let sum=(a,b)=>{
+    //          console.log("this ia a marks"+ (a+b))
+    //          a+b
+    //     }
+
+    //   const a=  setTimeout(sum,10000,5,5)
+    //   console.log(a);
+
+
+
+                // set interval
+    //  let a=setInterval(function(){
+    //     prompt("enter a marks")
+    //  },2000)
+
+    //  console.log(a);
+
+
+ 
+
+    
+  let a=setInterval(function validetion() {
+        let email=document.getElementById("email")
+        let password=document.getElementById("password")
+
+        if(email.value==""){
+           alert("enter your email ")
+        }
+       else if(password.value==""){
+           alert("enter your password  ")
+        }
+        
+        return true
+
+    },5000)
+    </script>
+</body>
+</html>
