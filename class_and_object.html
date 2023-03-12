@@ -34,41 +34,47 @@
         // tajim.cancle();
 
 
+        run = true
+        while (run) {
+
+
+            let a = prompt("enter a marks")
+
+
+            class result {
+
+                student() {
 
 
 
+                    if (50 <= a && 100 >= a) {
 
-        class result {
+                        console.log(`${this.name}   : pass`)
 
-            student() {
+                    }
+                    else if (a < 50) {
+                        console.log(`${this.name}  : fail`)
 
-                let a = prompt("enter a marks")
-
-                if (50 <= a && 100 >= a) {
-
-                    console.log(this.name + " " + ": pass")
-
+                    }
+                    else {
+                        console.log(`${this.name}  : invalid marks`);
+                    }
                 }
-                else if (a < 50) {
-                    console.log(this.name + " " + ": fail")
-
+                fill(studentname) {
+                    return this.name = studentname
                 }
-                else {
-                    console.log(this.name + " " + ": invalid marks");
-                }
+                
             }
-            fill(studentname) {
-                return this.name = studentname
-            }
 
+            let student = new result();
+            student.fill(prompt("enter name"))
+            run = confirm("any more student")
+            student.student()
+            console.log(student);
+           
+ 
 
         }
-
-        let student = new result();
-        student.fill(prompt("enter name"))
-        student.student()
-        console.log(student);
-
 
 
     </script>
