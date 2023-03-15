@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date task</title>
+    <style>
+        button {
+            font-size: 20px;
+            background-color: blue;
+            color: white;
+            padding: 5px 20px 5px 20px;
+            text-align: center;
+
+        }
+
+        button:hover {
+            box-shadow: 3px 3px 10px yellow, -3px -3px 10px yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="return settime()">date</button>
+    <p id="button"></p>
+    <script>
+        function settime() {
+            let b = new Date();
+            //    alert(a);
+            document.getElementById("button").innerHTML = b
+            // alert(b)
+
+          let a=  document.getElementById("button")
+            if (a.style.display === "none") {
+                a.style.display = "block";
+            } else {
+                a.style.display = "none";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
